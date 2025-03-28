@@ -1,0 +1,19 @@
+name: Multi-Step Job
+
+on: push
+
+jobs:
+  explain:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start
+        run: echo "Step 1 - Start"
+
+      - name: Get date
+        run: date
+
+      - name: Print working directory
+        run: pwd
+
+      - name: List files
+        run: ls -la
